@@ -19,7 +19,7 @@ export default function Model() {
             <div className="w-full bg-white mb-20 rounded-2xl flex flex-row flex-wrap-reverse gap-5 place-items-center justify-center overflow-hidden" id="display">
                 <div className="w-1/3 flex flex-col place-content-center items-center text-center" id="content-display">
                     <h1 className="text-6xl">{product.name}</h1>
-                    <p className="text-sm my-6 w-10/12">{product.description}</p>
+                    <p className="text-sm my-6 vitw-10/12">{product.description}</p>
                     <CartBtn />
                     <label htmlFor="options" className="block mt-5">Size:
                         <select id="options" name="options">
