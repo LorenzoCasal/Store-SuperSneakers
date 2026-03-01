@@ -1,5 +1,5 @@
 import Display from '../components/Display';
-import json from '../products.json';
+import { products } from '../utils/images';
 import BuyButton from '../components/Buy-Btn';
 import { Link } from 'react-router';
 
@@ -14,7 +14,7 @@ export default function Products() {
 
         <section className='flex flex-row flex-wrap items-center justify-evenly gap-5 pb-20'>
 
-            {json.map(p => (
+            {products.map(p => (
                 <article key={p.model} className="cards">
                     <img
                         src={p.img}

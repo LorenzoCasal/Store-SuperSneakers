@@ -1,8 +1,8 @@
-import json from '../products.json';
+import { products } from '../utils/images';
 import BuyButton from './Buy-Btn';
 
 export default function Display() {
-    const featured = json[0];
+    const featured = products[0];
 
     return (
         <div className='h-screen rounded-2xl flex flex-row flex-wrap-reverse items-center justify-center overflow-hidden' id='display'>

@@ -3,41 +3,41 @@
         "model": "aetherpulse",
         "name": "Aether Pulse",
         "description": "Why walk when you can glide? The Quantum Surge is designed for the bold. Its deep teal and lime-yellow palette mimics the Northern Lights, while the luminescent crystal shards at the collar scream speed.",
-        "img": "/images/aetherpulsefull.png",
-        "imgDisplay": "/images/aetherpulse.png",
+        "img": "aetherpulsefull.png",
+        "imgDisplay": "aetherpulse.png",
         "price": "$230"
     },
     {
         "model": "ether",
         "name": "Ether",
         "description": "Step into the future with the Neon Flare. Its sleek black base is electrified with neon pink and electric blue accents, creating a striking contrast. The shoe's design is inspired by cyberpunk aesthetics, making it a must-have for those who want to stand out in the crowd.",
-        "img": "/images/ether.png",
+        "img": "ether.png",
         "price": "$210"
     },
     {
         "model": "horizon",
         "name": "Horizon",
         "description": "The Solar Eclipse is a masterpiece of design and innovation. Its gradient of fiery orange and deep purple mimics the colors of a sunset, while the reflective solar panels on the sides add a futuristic touch. This shoe is perfect for those who want to make a bold statement.",
-        "img": "/images/horizon.png",
+        "img": "horizon.png",
         "price": "$250"
     },
     {
         "model": "urbangray",
         "name": "Urban Gray",
         "description": "The Urban Gray is the epitome of sleek and modern design. Its monochromatic palette of various shades of gray creates a sophisticated look, while the minimalist design emphasizes clean lines and subtle details. This shoe is perfect for those who appreciate understated elegance.",
-        "img": "/images/urbangray.png",
+        "img": "urbangray.png",
         "price": "$190"
     },
     {
         "model": "cave",
         "name": "Cave",
         "description": "A rugged and durable shoe designed for those who love outdoor adventures. Its earthy tones of gray and brown blend seamlessly with natural surroundings, while the reinforced sole provides excellent traction on rough terrain. This shoe is perfect for hikers and explorers who want to conquer the great outdoors in style.",
-        "img": "/images/cave.png",
+        "img": "cave.png",
         "price": "$220",
         "cavegrey": {
             "name": "Cave Grey",
             "description": "The Cave Grey is a rugged and durable shoe designed for those who love outdoor adventures. Its earthy tones of gray and brown blend seamlessly with natural surroundings, while the reinforced sole provides excellent traction on rough terrain. This shoe is perfect for hikers and explorers who want to conquer the great outdoors in style.",
-            "img": "/images/cavegrey.png",
+            "img": "cavegrey.png",
             "price": "$220"
         }
     },
@@ -45,14 +45,14 @@
         "model": "mountainclimbing",
         "name": "Mountain Climbing",
         "description": "The Mountain Climbing shoe is built for those who seek the thrill of conquering new heights. Its sturdy construction and rugged design make it perfect for tackling challenging terrains, while the bold color scheme of deep green and vibrant orange adds a touch of excitement to your outdoor adventures.",
-        "img": "/images/mountainclimbing.png",
+        "img": "mountainclimbing.png",
         "price": "$230"
     },
     {
         "model": "freshpulse",
         "name": "Fresh Pulse",
         "description": "The Fresh Pulse is a vibrant and energetic shoe that embodies the spirit of youth and vitality. Its bold color palette of electric blue and neon green creates a striking visual impact, while the sleek design and comfortable fit make it perfect for those who want to stay active and stylish.",
-        "img": "/images/freshpulse.png",
+        "img": "freshpulse.png",
         "price": "$200"
     }
 ]

@@ -1,5 +1,5 @@
 import { useParams } from "react-router";
-import json from '../products.json';
+import { products } from "../utils/images";
 import BuyButton from "../components/Buy-Btn";
 import CartBtn from "../components/Cart-Btn";
 import Display from "../components/Display";
@@ -7,8 +7,8 @@ import '../index.css';
 
 export default function Model() {
     const { model } = useParams();
-    const product = json.find(p => p.model === model);
-    const productsArray = Object.values(json);
+    const product = products.find(p => p.model === model);
+    const productsArray = products;
     const cardsCount = 5;
 
     const getRandomProduct = () => productsArray[Math.floor(Math.random() * productsArray.length)];
@@ -17,9 +17,9 @@ export default function Model() {
     return <>
         <main className="mt-10">
             <div className="w-full bg-white mb-20 rounded-2xl flex flex-row flex-wrap-reverse gap-5 place-items-center justify-center overflow-hidden" id="display">
-                <div className="w-1/3 text-center" id="content-display">
+                <div className="w-1/3 flex flex-col place-content-center items-center text-center" id="content-display">
                     <h1 className="text-6xl">{product.name}</h1>
-                    <p className="text-sm my-6 w-full">{product.description}</p>
+                    <p className="text-sm my-6 w-10/12">{product.description}</p>
                     <CartBtn />
                     <label htmlFor="options" className="block mt-5">Size:
                         <select id="options" name="options">
@@ -39,7 +39,6 @@ export default function Model() {
                             )}
                         </select>
                     </label>
-
                 </div>
                 <img src={product.img} alt="model image" className="w-1/2" />
             </div>

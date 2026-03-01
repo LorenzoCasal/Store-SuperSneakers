@@ -130,7 +130,7 @@ input[type="password"] {
 
 .login {
   box-shadow: #000000 0px 3px 50px -20px;
-  background-image: url('/images/login.png');
+  background-image: url('./assets/login.png');
   background-size: cover;
   background-position: center;
   width: 100%;
