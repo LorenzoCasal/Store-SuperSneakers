@@ -1,6 +1,5 @@
-export default function AddCart() {
-  return <button type="button" className='w-30 h-12 border-2 border-black rounded-2xl cursor-pointer btn-buy'>
-    Add Cart
+export default function AddCart({ onClick }) {
+  return <button onClick={onClick} type="button" className='w-30 h-12 text-sm my-5 border-2 border-black rounded-2xl cursor-pointer btn-buy'>
+    Add to Cart
   </button>
 }
-

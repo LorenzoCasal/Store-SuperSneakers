@@ -17,11 +17,13 @@ export default function Home() {
                     <div className='flex flex-row flex-wrap justify-center gap-10'>
                         {topModels.map(m => {
                             const p = products.find(p => p.model === m);
+                            const defaultVariant = p.variants[0];
+
                             return (
                                 <article key={m}>
                                     <Link to={`/Products/${p.model}`}>
                                         <img
-                                            src={p.img}
+                                            src={defaultVariant.img}
                                             className="w-64 h-64 hover:scale-110 transition-transform duration-300"
                                         />
                                     </Link>

@@ -14,20 +14,24 @@ export default function Products() {
 
         <section className='flex flex-row flex-wrap items-center justify-evenly gap-5 pb-20'>
 
-            {products.map(p => (
-                <article key={p.model} className="cards">
-                    <img
-                        src={p.img}
-                        alt={p.name}
-                        className="w-50 mb-5"
-                    />
-                    <h3 className="text-2xl">{p.name}</h3>
-                    <p className="text-sm">{p.price}</p>
-                    <Link to={`/Products/${p.model}`}>
-                        <BuyButton model={p.model} />
-                    </Link>
-                </article>
-            ))}
+            {products.map(p => {
+                const defaultVariant = p.variants[0];
+
+                return (
+                    <article key={p.model} className="cards">
+                        <img
+                            src={defaultVariant.img}
+                            alt={p.name}
+                            className="w-50 mb-5"
+                        />
+                        <h3 className="text-2xl">{p.name}</h3>
+                        <p className="text-sm">${defaultVariant.price}</p>
+                        <Link to={`/Products/${p.model}`}>
+                            <BuyButton model={p.model} />
+                        </Link>
+                    </article>
+                );
+            })}
         </section>
     </>
 }

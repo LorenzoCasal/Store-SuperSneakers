@@ -10,7 +10,7 @@ export default function ForgetPasswordReset() {
 
                 <img src={logo} alt="SuperSneakers' logo" className='w-32' />
                 <h1 className="text-center font-bold text-4xl">Reset your password</h1>
-                <p className='text-center text-md font-extralight'>We will send you an email with a code to verify that the account belongs to you.</p>
+                <p className='text-center text-md font-extralight w-10/12'>We will send you an email with a code to verify that the account belongs to you.</p>
 
                 <form action="" method="post" className="w-4/5 flex flex-col gap-5">
                     <label htmlFor="email">

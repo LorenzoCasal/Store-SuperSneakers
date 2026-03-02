@@ -11,8 +11,12 @@ function resolveImage(fileName) {
 
 export const products = rawProducts.map(product => ({
   ...product,
-  img: resolveImage(product.img),
   imgDisplay: product.imgDisplay
     ? resolveImage(product.imgDisplay)
     : undefined,
+
+  variants: product.variants.map(variant => ({
+    ...variant,
+    img: resolveImage(variant.img),
+  })),
 }));
