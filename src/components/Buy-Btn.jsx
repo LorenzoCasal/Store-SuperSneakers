@@ -7,7 +7,7 @@ export default function BuyButton({ model }) {
     navigate(`/Products/${model}`);
   }
 
-  return <button onClick={handleClick} type="button" className='w-30 h-12 border-2 border-black rounded-2xl cursor-pointer btn-buy'>
+  return <button onClick={handleClick} type="button" className='w-30 h-12 border-2 border-black rounded-2xl cursor-pointer'>
     Buy
   </button>
 }

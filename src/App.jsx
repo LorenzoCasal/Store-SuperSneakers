@@ -10,6 +10,7 @@ import LogIn from './pages/LogIn';
 import SignUp from './pages/SignUp';
 import ForgetPasswordReset from './pages/ForgetPasswordReset';
 import Cart from './pages/Cart';
+import Purchase from './pages/Purchase';
 import Terms from './pages/Terms';
 
 export default function App() {
@@ -25,6 +26,7 @@ export default function App() {
                 <Route path="/SignUp" element={<SignUp />} />
                 <Route path="/ForgotPasswordReset" element={<ForgetPasswordReset />} />
                 <Route path="/Cart" element={<Cart />} />
+                <Route path="/Cart/Purchase" element={<Purchase />} />
                 <Route path="/TermsAndConditions" element={<Terms />} />
                 <Route path="*" element={<NotFound />} />
             </Routes>

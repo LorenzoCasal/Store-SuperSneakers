@@ -13,6 +13,16 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 form input {
   background-color: rgba(241, 242, 244);
   border-radius: 8px;
@@ -72,14 +82,14 @@ input[type="password"] {
   box-shadow: 5px 5px 60px -20px #000000;
 }
 
-.btn-buy {
+button {
   position: relative;
   overflow: hidden;
   background: transparent;
   transition: color 400ms ease-out, transform 400ms ease-out;
 }
 
-.btn-buy::before {
+button::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -93,12 +103,12 @@ input[type="password"] {
   z-index: -1;
 }
 
-.btn-buy:hover {
+button:hover {
   color: white;
   transform: translateY(-5px);
 }
 
-.btn-buy:hover::before {
+button:hover::before {
   opacity: 1;
 }
 
@@ -149,8 +159,17 @@ input[type="password"] {
   transition: all 400ms ease-out;
 }
 
-.login-btn:hover {
+.login-hover {
   scale: 1.05;
+}
+
+.remove-btn:hover {
+  color: #000000;
+  transform: translateY(0);
+}
+
+.remove-btn:hover::before {
+  opacity: 0;
 }
 
 @media screen and (max-width: 768px) {

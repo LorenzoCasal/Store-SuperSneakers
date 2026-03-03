@@ -1,7 +1,13 @@
 import { useCart } from "../context/CartContext";
+import { useNavigate } from "react-router";
 
 export default function Cart() {
     const { cart, removeFromCart, totalPrice } = useCart();
+    const purchase = useNavigate()
+
+    function handleClick () {
+        purchase(`/Cart/Purchase`)
+    }
 
     return (
         <div className="h-auto p-10 pb-60">
@@ -19,7 +25,7 @@ export default function Cart() {
                         <p>Size: {item.size}</p>
                         <p>Quantity: {item.quantity}</p>
                         <p>Subtotal: ${item.subtotal}</p>
-                        <button onClick={() => removeFromCart(index)} className="mt-10 hover:text-red-700">
+                        <button onClick={() => removeFromCart(index)} className="mt-10 hover:text-red-700 remove-btn">
                             Remove
                         </button>
                     </div>
@@ -29,6 +35,8 @@ export default function Cart() {
             <h2 className="text-xl font-extrabold italic mt-5">
                 Total: ${totalPrice}
             </h2>
+            
+            {cart.length > 0 && <button onClick={handleClick} className="cursor-pointer mt-5 py-2 px-10 border rounded-xl">Buy</button>}
         </div>
     );
 }
