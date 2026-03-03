@@ -4,7 +4,7 @@ export default function Purchase() {
     const { cart, totalPrice } = useCart();
 
     return (
-        <main className="px-6 sm:px-10 lg:px-20 py-10 max-w-7xl mx-auto">
+        <main className="px-6 sm:px-10 lg:px-20 py-10 max-w-7xl mx-auto purchase-font">
 
             <h1 className="text-2xl sm:text-3xl font-normal text-left mb-10">
                 Purchase Info

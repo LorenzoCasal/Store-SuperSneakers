@@ -38,7 +38,7 @@ export default function Model() {
             price: selectedVariant.price,
             subtotal: selectedVariant.price * quantity,
         };
-
+        
         addToCart(item);
     }
 
@@ -71,7 +71,7 @@ export default function Model() {
                             <QuantitySelect stock={selectedVariant.stock} value={quantity} onChange={setQuantity} />
                         </label>
                         <p className="text-xl font-semibold mt-4">${selectedVariant.price}</p>
-                        <CartBtn onClick={handleAddToCart}/>
+                        <CartBtn onClick={handleAddToCart} />
                     </div>
 
                     <img src={selectedVariant.img} alt={product.name} className="w-1/2" />

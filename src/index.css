@@ -172,6 +172,14 @@ button:hover::before {
   opacity: 0;
 }
 
+.purchase-font {
+  font-family: "Roboto", sans-serif;
+}
+
+.purchase-font h1{
+  font-family: "JetBrains Mono", monospace;
+}
+
 @media screen and (max-width: 768px) {
 
   body {
