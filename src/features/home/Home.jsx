@@ -1,5 +1,5 @@
-import Display from '../components/Display';
-import { products } from '../utils/images';
+import Display from '../../shared/components/Display';
+import { products } from '../products/images';
 import { Link } from 'react-router';
 
 export default function Home() {

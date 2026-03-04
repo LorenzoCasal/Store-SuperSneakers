@@ -1,6 +1,6 @@
-import logo from '../assets/logo.png';
+import logo from '../../assets/logo.png';
 import { Link } from 'react-router';
-import '../index.css';
+import '../../index.css';
 
 export default function LogIn() {
     return <>

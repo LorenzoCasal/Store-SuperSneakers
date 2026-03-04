@@ -3,7 +3,6 @@
     "model": "aetherpulse",
     "name": "Aether Pulse",
     "description": "Why walk when you can glide? The Quantum Surge is designed for the bold. Its deep teal and lime-yellow palette mimics the Northern Lights, while the luminescent crystal shards at the collar scream speed.",
-    "imgDisplay": "aetherpulse.png",
     "variants": [
       {
         "color": "Default",

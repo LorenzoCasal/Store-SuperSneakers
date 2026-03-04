@@ -1,6 +1,6 @@
-import Display from '../components/Display';
-import { products } from '../utils/images';
-import BuyButton from '../components/Buy-Btn';
+import Display from '../../shared/components/Display';
+import { products } from './images';
+import BuyButton from '../../shared/components/Buy-Btn';
 import { Link } from 'react-router';
 
 export default function Products() {

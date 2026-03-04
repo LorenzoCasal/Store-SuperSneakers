@@ -1,5 +1,3 @@
-import Nav from '../components/Nav';
-
 export default function NotFound() {
     return (
         <div className='flex flex-col justify-center items-center h-auto py-60'>

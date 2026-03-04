@@ -1,12 +1,12 @@
-import rawProducts from "../products.json";
+import rawProducts from './data/products.json';
 
-const images = import.meta.glob("../assets/*", {
+const images = import.meta.glob("../../assets/*", {
   eager: true,
   import: "default",
 });
 
 function resolveImage(fileName) {
-  return images[`../assets/${fileName}`];
+  return images[`../../assets/${fileName}`];
 }
 
 export const products = rawProducts.map(product => ({
@@ -20,3 +20,5 @@ export const products = rawProducts.map(product => ({
     img: resolveImage(variant.img),
   })),
 }));
+
+console.log(images);

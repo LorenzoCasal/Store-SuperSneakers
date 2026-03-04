@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 export default function QuantitySelect({ stock, value, onChange }) {
     const maxOptions = Math.min(stock, 10);
 

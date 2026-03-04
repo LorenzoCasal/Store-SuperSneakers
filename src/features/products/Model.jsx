@@ -1,12 +1,12 @@
 import { useParams } from "react-router";
 import { useState } from "react";
-import { products } from "../utils/images";
-import { useCart } from "../context/CartContext";
-import BuyButton from "../components/Buy-Btn";
-import QuantitySelect from "../components/Stock";
-import CartBtn from "../components/Cart-Btn";
-import Display from "../components/Display";
-import "../index.css";
+import { products } from "./images";
+import { useCart } from "../cart/CartContext";
+import BuyButton from "../../shared/components/Buy-Btn";
+import QuantitySelect from "./Stock";
+import CartBtn from "../cart/Cart-Btn";
+import Display from "../../shared/components/Display";
+import "../../index.css";
 
 export default function Model() {
     const [quantity, setQuantity] = useState(1);

@@ -1,17 +1,17 @@
 import { BrowserRouter, Routes, Route } from 'react-router';
-import Home from './pages/Home';
-import NotFound from './pages/NotFound';
-import Nav from './components/Nav';
-import Footer from './components/Footer';
-import ScrollReset from './components/Scroll-Reset';
-import Products from './pages/Products';
-import Model from './pages/Model';
-import LogIn from './pages/LogIn';
-import SignUp from './pages/SignUp';
-import ForgetPasswordReset from './pages/ForgetPasswordReset';
-import Cart from './pages/Cart';
-import Purchase from './pages/Purchase';
-import Terms from './pages/Terms';
+import Home from '../features/home/Home';
+import NotFound from '../pages/NotFound';
+import Nav from '../shared/components/Nav';
+import Footer from '../shared/components/Footer';
+import ScrollReset from '../shared/components/Scroll-Reset';
+import Products from '../features/products/Products';
+import Model from '../features/products/Model';
+import LogIn from '../features/auth/LogIn';
+import SignUp from '../features/auth/SignUp';
+import ForgetPasswordReset from '../features/auth/ForgetPasswordReset';
+import Cart from '../features/cart/Cart';
+import Purchase from '../features/purchase/Purchase';
+import Terms from '../pages/Terms';
 
 export default function App() {
     return (
