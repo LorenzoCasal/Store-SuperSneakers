@@ -1,6 +1,6 @@
 import products from '../../features/products/data/products.json';
 import image from '../../assets/aetherpulse.png'
-import BuyButton from './Buy-Btn';
+import BuyButton from './BuyButton';
 
 export default function Display() {
     const featured = products[0];

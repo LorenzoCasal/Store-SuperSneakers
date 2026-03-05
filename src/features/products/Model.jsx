@@ -2,9 +2,9 @@ import { useParams } from "react-router";
 import { useState } from "react";
 import { products } from "./images";
 import { useCart } from "../cart/CartContext";
-import BuyButton from "../../shared/components/Buy-Btn";
+import BuyButton from "../../shared/components/BuyButton";
 import QuantitySelect from "./Stock";
-import CartBtn from "../cart/Cart-Btn";
+import CartBtn from "../cart/CartButton";
 import Display from "../../shared/components/Display";
 import "../../index.css";
 

@@ -2,7 +2,7 @@ import { Link } from "react-router";
 
 export default function Footer() {
     return (
-        <footer className='bg-black text-white text-md py-15 flex flex-row flex-wrap justify-center items-center gap-10' style={{ width: '100vw', marginLeft: 'calc(50% - 50vw)' }}>
+        <footer className='bg-black text-white text-md py-15 flex flex-row flex-wrap justify-center items-center gap-5' style={{ width: '100vw', marginLeft: 'calc(50% - 50vw)' }}>
 
             <div className="w-sm">
                 <h3 className='text-4xl font-extrabold mb-2'>ABOUT US</h3>
@@ -19,7 +19,7 @@ export default function Footer() {
 
             <aside className="text-center w-full max-md:w-10/12 pt-20">
                 <Link to='/TermsAndConditions' className="block hover:text-blue-700">Terms and conditions.</Link>
-                <small className="opacity-80 max-md:text-xs">{new Date().getFullYear()}&copy;SuperSneakers. Fictional project for educational purposes. Images and trademarks are the property of their respective owners.</small>
+                <small className="opacity-80 max-md:text-xs">{new Date().getFullYear()}&copy;SuperSneakers. Fictional project for educational purposes.</small>
             </aside>
 
         </footer>
