@@ -6,7 +6,6 @@ import BuyButton from "../../shared/components/BuyButton";
 import QuantitySelect from "./Stock";
 import CartBtn from "../cart/CartButton";
 import Display from "../../shared/components/Display";
-import "../../index.css";
 
 export default function Model() {
     const [quantity, setQuantity] = useState(1);

@@ -1,6 +1,5 @@
 import logo from '../../assets/logo.png';
 import { Link } from 'react-router';
-import '../../index.css';
 
 export default function ForgetPasswordReset() {
     return <>
